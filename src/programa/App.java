@@ -46,11 +46,11 @@ public class App {
        Produtos produtos = new Produtos();
 
         System.out.println("Infome o código d produto:");  
-        produtos.setCodigo(RelatorioVendas.nextLine());
+        produtos.setCodigo(App.nextLine());
         System.out.println("Informe o nome do produto:");
-        produtos.setNome(RelatorioVendas.nextLine());
+        produtos.setNome(App.nextLine());
         System.out.println("Informe o valor:");
-        produtos.setValor(RelatorioVendas.nextLine());
+        produtos.setValor(App.nextLine());
        
         qntCadastrado = qntCadastrado + 1;
 
@@ -149,6 +149,10 @@ public class App {
             System.out.print("\033[H\033[2J");
     
         System.out.flush();
+    }
+
+    public static int nextLine() {
+        return 0;
     } 
  }       
         
