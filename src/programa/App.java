@@ -123,7 +123,7 @@ public class App {
              System.out.println("codigo invalido");
          voltarMenu(sc);
         }              
-        
+        sc.close();
     }   
 
     public static Produtos[] getProduts() {

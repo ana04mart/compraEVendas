@@ -1,13 +1,47 @@
 package classes;
 
+import java.text.DateFormat;
+import java.util.ArrayList;
+
+import javax.xml.crypto.Data;
+
+import util.ConvertendoDataEHora;
+
 public class Vendas {
-   
-    public int dataVenda;
-    public String produtoVendido;
-    public int qntVendida;
-    public double valorInicial;
-    public double valoraPagar;
+
+    private int dataVenda;
+    private String produtoVendido;
+    private int qntVendida;
+    private double valorInicial;
+    private double valoraPagar;
     
+
+    private int codigoDoProduto;
+    private ArrayList <Vendas> vendas; 
+    
+    public Vendas(String string, String produtoVendido, int qntVendida, double valorInicial, double valoraPagar, int codigoDoProduto) {
+        this.dataVenda = dataVenda;
+        this.produtoVendido = produtoVendido;
+        this.qntVendida = qntVendida;
+        this.valorInicial = valorInicial;
+        this.valoraPagar = valoraPagar;
+        this.codigoDoProduto = codigoDoProduto;
+        
+      
+        this.vendas = new ArrayList <Vendas>();
+    Vendas vendas = new Vendas(string, produtoVendido, qntVendida, valorInicial, valoraPagar, codigoDoProduto);
+    this.vendas.add(vendas);     
+    }
+    
+    public int getCodigoDoProduto() {
+        return codigoDoProduto;
+    }
+
+
+    public void setCodigoDoProduto(int codigoDoProduto) {
+       
+     this.codigoDoProduto = codigoDoProduto;
+    }
     public int getValorInicial() {
         return (int) valorInicial;
     }
@@ -57,6 +91,11 @@ public class Vendas {
     public String toString() {
         return "Vendas [valorInicial=" + valorInicial + ", valoraPagar=" + valoraPagar + "]";
     }
+
+    }
+
+   
+    
 
     
     

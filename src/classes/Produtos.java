@@ -21,8 +21,8 @@ public class Produtos {
         return codigo;
     }
     
-    public void setCodigo(int string) {
-        this.codigo = string;
+    public void setCodigo(int i) {
+        this.codigo = codigo;
     }
     
     public String getNome() {
@@ -65,6 +65,9 @@ public class Produtos {
     }
 
     public static void exibirProduto(Object prodBusca) {
+    }
+
+    public void setValor(String nextLine) {
     }
     
         
