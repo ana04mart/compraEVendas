@@ -35,11 +35,7 @@ public class RelatorioVendas {
       
         }
 
-    public static int nextLine() {
-        return 0;
-    }
-
-    public static int nextLine() {
+   public static int nextLine() {
         return 0;
     }
     
